@@ -1,0 +1,416 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+
+
+
+
+header
+	vertical-align: middle
+	padding-top: 20px
+	position: relative
+	ul
+		padding-top: 5px
+		li
+			margin-right: 23px	
+			display: inline-block
+			a
+				font-weight: 600
+				color: #989898
+				font-size: 13.2px
+				text-transform: uppercase
+				&:hover
+					color: #989898
+			&:last-of-type
+				margin-right: 0
+				margin-left: 30px
+				
+				a
+					color: #f2f8e0
+					background-color: #bcda5c
+					padding: 5px 30px
+					border-radius: 20px
+					display: inline-block
+
+			&:first-of-type
+				margin-left: 5px
+
+
+
+
+.banner
+	color: white
+	min-height: 550px
+	background-image: url(../img/banner-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	.banner-content
+		text-align: center
+		padding-top: 150px
+		margin: 0 auto
+		width: 940px
+		h1
+			font-weight: 600
+			font-size: 49.2px
+		span
+			font-weight: 400
+			font-size: 35.2px
+		a
+			display: inline-block
+			margin-top: 25px
+			font-weight: 600
+			background-color: #99c50a
+			padding: 20px 55px
+			color: white
+			text-decoration: none
+			border-radius: 10px
+		.banner-arrows
+			margin-top: 80px
+			float: right
+			img
+				&:nth-of-type(2)
+					margin-left: 30px
+					transform: rotate(180deg)
+
+.content-section_1
+	padding-top: 210px
+	text-align: center
+	h2
+		position: relative
+		font-weight: 600
+		font-size: 31.2px
+		color: #515151
+		text-transform: uppercase
+		&::before
+			content: ''
+			display: block
+			background-image: url(../img/section_1-icon.png)
+			width: 58px
+			height: 58px
+			position: absolute
+			top: -80px
+			left: 530px
+	p
+		color: #515151
+		font-size: 19.2px
+
+		&:first-of-type
+			margin-top: 50px
+			margin-bottom: 50px
+.content-section_2
+	margin-top: 170px
+	.row
+		&:first-of-type
+			border-bottom: 1px solid #e6e6e6
+	.section_2-textWrap
+		padding-bottom: 36px
+		&:hover
+			span.number
+				background-color: $accent
+			border-bottom: 1px solid $accent
+
+	span
+		font-size: 33.2px
+		color: #656565
+	span.number
+		color: white
+		background-color: #5f5f5f
+		border-radius: 50%
+		display: inline-block
+		width: 43px
+		height: 43px
+		text-align: center
+		font-size: 20px
+		padding-top: 5px
+		margin-right: 30px
+	h3
+		color: $accent
+		margin-top: 70px
+		font-size: 25.2px
+		margin-bottom: 15px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 10px
+			left: -300px
+			display: block
+			background-image: url(../img/section_2-glasses.png)
+			width: 128px
+			height: 136px
+	p
+		color: #606060
+		font-size: 17.2px
+
+.content-section_3
+	margin-top: 110px
+	padding: 48px 0px
+	background-image: url(../img/section_3-bg.png)
+	background-repeat: repeat-y
+	background-size: contain
+	.section_3-item
+		position: relative
+		padding-left: 180px
+		color: #515151
+		h3
+			font-size: 23.2px
+			font-family: 'Montserrat', sans-serif
+			margin-bottom: 40px
+		p
+			font-size: 17.2px
+			margin-bottom: 30px
+		a
+			display: inline-block
+			background-color: #26a6d1
+			color: #ffffff
+			padding: 15px 25px
+			border-radius: 7px
+
+		img
+			position: absolute
+			top: 70px
+			left: -10px
+	.green
+		img
+			left: 30px
+		a
+			background-color: $accent
+.content-section_4
+	margin-top: 80px
+	h3
+		font-weight: 600
+		font-size: 29.2px
+		color: #515151
+	p
+		font-size: 17.2px
+		color: #8f8f8f
+	a.button
+		color: #515151
+		font-weight: 600
+		font-size: 14.83px
+		border-radius: 8px
+		border: 1px solid #b6b6b6
+		display: inline-block
+		margin-top: 40px
+		padding: 15px 20px
+	.section_4-item
+		margin-top: 70px
+		padding-bottom: 25px
+		border: 1px solid #e5e5e5
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		background-color: #f9f9f9
+		.item_pic
+			color: white
+			position: relative
+			> img
+				width: 100%
+			span
+				display: inline-block
+				
+				font-weight: bold
+			.price
+				padding: 8px 6px
+				position: absolute
+				bottom: 20px
+				right: 20px
+				background-color: #26a6d1
+				border-radius: 10px
+			&::before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				background-image: url(../img/section_4-new.png)
+				width: 72px
+				height: 74px
+
+		.item_text
+			padding: 0 25px
+			h4
+				font-weight: bold
+				font-size: 17.2px
+				margin-top: 30px
+			span
+				color: #8d8d8d
+				display: inline-block
+				margin-top: 15px
+				font-weight: 600
+				&:last-of-type
+					margin-left: 105px	
+			> img
+				width: 100%
+			a
+				position: relative
+				display: inline-block
+				margin-top: 50px
+				margin-left: 110px
+				color: #484848
+				font-weight: 600
+				img
+					margin-left: 10px
+				&::before
+					position: absolute
+					content: ''
+					display: block
+					width: 285px
+					height: 1px
+					background-color: #d6d6d6
+					top: -30px
+					left: -85px
+
+.content-section_5
+	text-align: center
+	background-image: url(../img/section_5-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 80px
+	padding-bottom: 60px
+	h2
+		font-weight: 600
+		font-size: 39.2px
+		color: $accent
+	p
+		font-size: 19.2px
+		color: #949494
+	.section_5-comment
+		padding: 25px 32px
+		margin-bottom: 35px
+		background-color: #fff
+		border-radius: 15px
+		margin-top: 105px
+		position: relative
+		h3
+			color: $accent
+			font-weight: 600
+			font-size: 21.2px
+		p
+			font-size: 13.2px
+		&::after
+			content: ''
+			position: absolute
+			bottom: -21px
+			left: 150px
+			width: 0;
+			height: 0;
+			border-style: solid
+			border-width: 22px 22px 0 0
+			border-color: #fff transparent transparent transparent
+
+	.section_5-author
+		font-family: "Montserrat", sans-serif
+		img
+			margin-right: 18px
+
+.footer-partners
+	padding: 60px 0px 0PX
+	img
+		margin-bottom: 45px
+	border-bottom: 1px solid #dddddd
+	
+footer
+	text-align: center
+	span
+		display: inline-block
+		padding: 30px 0px
+		color: #848484
+
+
+
+$w: 34px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 0px
+	left: 50%
+	z-index: 200
+	display: none
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: $accent
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+        
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: $accent
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+	display: block
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: $accent
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+	display: block
+
+
+.sandwich.active 
+	.sw-topper
+		top: 10px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+@import "media" // Always at the end

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Damn calculator</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	
+	<section class="calc">
+
+		<div class="auto">
+			<img src="img/auto.png" alt="">
+			<h3>Автомобиль</h3>
+			<ul>
+
+				<li id='auto'><em>Газель</em><div class="count"><span class="list"></span></div><ul id='autoChoose'>
+					<li id='Usual'>Газель</li>
+					<li id='Long'>Удл. Газель</li>
+				</ul></li>
+
+				<li>время аренды: <div class="count"><span class="minus minus-time-of-rent"></span><span id='time-of-rent'>5</span><span class="plus plus-time-of-rent"></span></div> <br><i>не менее 5 часов</i></li>
+
+				<li id='admission-to-the-center'>пропуск в центр: <div class="count"><span><em>нет</em></span><span class="list"></span></div><br><i>пределы 3 кольца</i>
+					<ul id='admission-list'>
+						<li id='admission-yes'>Да</li>
+						<li id='admission-no'>Нет</li>
+					</ul></li>
+
+				<li>от МКАД: <div class="count"><span class="minus minus-fromCad"></span><span id="fromCAD">0</span><span class="plus plus-fromCad"></span></div><br><i>за МКАД 15руб/км</i></li>
+			
+			</ul>	
+		</div>
+
+		<div class="stevedores">
+			<img src="img/stevedores.png" alt="">
+			<h3>Грузчики</h3>
+			<ul>
+				<li>Количество <div class="count"><span class="minus minus-stevedores"></span>
+				<span id='CountOfStevedores'>0</span><span class='plus plus-stevedores'></span></div></li>
+
+				<li>Время работы <div class="count"><span class='minus minus-time-of-job'></span><span id='timeOfJob'>4</span><span class='plus plus-time-of-job'></span></div><br><i>не менее 4 часов</i></li>
+
+			</ul>
+		</div>
+
+		<div class="materials">
+			<img src="img/materials.png" alt="">
+			<h3>Упаковочные материалы</h3>
+			<ul>
+				<li>Коробка <div class="count"><span class='minus minus-box'></span><span id='boxes'>0</span><span class='plus plus-box'></span></div></li>
+
+				<li>Пузырчатая пленка <div class="count"><span class='minus minus-bubbleWrap'></span><span id='bubbleWrap'>0</span><span class='plus plus-bubbleWrap'></span></div></li>
+
+				<li>Стрейч-пленка <div class="count"><span class='minus minus-stretch'></span><span id='stretch'>0</span><span class='plus plus-stretch'></span></div></li>
+
+				<li>Картон (лист) <div class="count"><span class='minus minus-cardboard'></span><span id='cardboard'>0</span><span class='plus plus-cardboard'></span></div></li>
+
+				<li>Скотч <div class="count"><span class='minus minus-tape'></span><span id='tape'>0</span><span class='plus plus-tape'></span></div></li>
+			</ul>
+		</div>
+
+		<div class="totalPrice">
+			<div id="default"></div>
+			<span>Итого</span>
+			<span class="price"><em>Price</em> рублей</span>
+			<a href="#" class="send">Заказать сейчас</a>
+		</div>
+
+	</section>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

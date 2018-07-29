@@ -1,0 +1,332 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$red-color: #9B1818
+$blue-color: #003469
+$dark-color: #003469
+$green-color: #67bc5c
+
+body
+	font-family: "Raleway", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+
+h1
+	color: #fff
+	font-size: 60px
+	line-height: 56px
+	font-weight: bold
+	margin-bottom: 0
+
+section,
+footer
+	padding: 58px 0 68px
+	h2
+		color: $blue-color
+		line-height: 56px
+		font-size: 42px
+
+button
+	background-color: $red-color
+	color: white
+	padding: 0 25px
+	border: none
+	border-radius: 3px
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+header
+	min-height: 640px
+	background-image: url("../img/top_bg.jpg")
+	background-position: top center
+	background-size: cover
+	color: #fff
+	padding-top: 32px
+
+.logo
+	text-align: left
+	font-size: 40px
+	font-weight: bold
+
+.header-phone
+	text-align: right
+	.tab
+		text-transform: uppercase
+		cursor: pointer
+	.tab_item
+		font-size: 35px
+		line-height: 45px
+	.wrapper 
+		.active
+			text-decoration: underline
+
+
+.header_main
+	text-align: left
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li	
+		position: relative
+	.tab
+		text-transform: uppercase
+		cursor: pointer
+		background-color: rgba(white,.25)
+		padding: 12px 18px
+		float: left
+		font-weight: bold
+		transition: all .7s
+		&.active
+			background-color: rgba(white,.7)
+			color: black
+	.tab_item
+		line-height: 45px
+		color: black
+		text-transform: uppercase
+		padding-top: 10px
+		font-weight: bold
+		padding: 25px 25px 25px 85px
+
+		background-color: rgba(white,.7)
+	.wrapper
+		display: inline-block
+	button
+		float: right
+	.fa
+		font-size: 25px
+		position: absolute
+		top: 10px
+		left: -35px
+		color: grey
+
+		
+.teasers
+	padding-left: 40px
+	font-size: 12px
+	+linear-gradient(#e8eff7, #c6d8ee)
+	.teaser-description
+		position: relative
+		text-transform: uppercase
+		text-align: left
+		padding-left: 10px
+		color: $blue-color
+		span
+			font-size: 22px
+			display: block
+
+
+			
+
+.teaser-icon,
+	font-size: 45px
+	position: absolute
+	top: 0
+	left: -30px
+	color: black
+	line-height: 0
+
+
+.profi
+	h2
+		text-align: center
+	.item
+		display: inline-block
+		position: relative
+		padding-left: 130px
+	h3
+		color: $red-color
+		font-size: 30px
+		margin-bottom: 0
+	p
+		margin: 0
+	img
+		max-width: 60px
+	.item-descr
+		
+	.item-logo
+		position: absolute
+		top: 60px
+		left: 45px
+
+form
+	margin-top: 30px
+	max-width: 320px
+	background-color: #f7f7f7
+	padding: 20px 30px
+	border: $green-color 5px solid
+	border-radius: 5px
+	h2
+		text-transform: uppercase
+		padding: 0
+		line-height: 1
+		margin-bottom: 30px
+		color: $text-color
+		font-size: 22px
+	label
+		display: block
+		margin-bottom: 10px
+		color: #666
+		font-size: 14px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #d9d9d9 1px solid
+		width: 100%
+		box-shadow: 0 0 20px rgba(0,0,0,.06) inset
+		text-indent: 10px
+		font-size: 20px
+		margin-top: 3px
+		&:focus
+			box-shadow: $green-color 0 0 0 3px
+			border-radius: 2px
+			border-color: $green-color
+	button
+		background-color: $green-color
+		padding: 15px 25px
+	.btn_wrap
+		text-align: center
+		margin: 30px 0 10px
+
+.reviews
+	background-image: url("../img/middle_bg.jpg")
+	background-size: cover
+	background-position: top center
+	min-height: 620px
+	background-repeat: no-repeat
+	h2
+		text-align: center
+		color: #fff
+
+.item-owl
+	.owl-nav
+		color: #fff !important
+	color: #fff
+	text-align: center
+	.img_wrap
+		width: 165px
+		height: 165px
+		margin: auto
+		img
+			display: inline-block
+			border-radius: 50%
+			border: #585a5B 10px solid
+	h4
+		font-size: 22px
+		margin-top: 10px
+		font-weight: normal
+		font-style: italic
+		&:after
+			content: ''
+			display: block
+			width: 80px
+			height: 1px
+			background-color: #cea380
+			margin: auto
+			margin-top: 10px
+
+.owl-nav
+	div
+		width: 34px
+		height: 140px
+		background-image: url("../img/arrows.png")
+		position: absolute
+		top: 80px
+		opacity: .5
+		&.owl-next
+			right: 0
+			background-position: top right
+
+
+
+section.tagline
+	padding-top: 20px
+	background-image: url("../img/red_bg.jpg")
+	h3
+		font-size: 26px
+		color: #fff
+		text-align: center
+		background-color: rgba(255,255,255,.2)
+		text-transform: uppercase
+
+	.button_wrap
+		text-align: center
+		button
+			color: black
+			text-transform: uppercase
+			font-weight: bold
+			background-color: #FFF
+			padding: 10px 25px
+
+section.contacts
+	padding: 0
+	text-align: center
+	h2
+		color: black
+		display: inline-block
+	strong
+		font-size: 50px
+	button
+	.tabs
+		display: inline-block
+		margin-left: 20px
+		border: 5px solid #752e2e
+		border-radius: 5px
+		.tab
+			height: 40px
+			line-height: 40px
+			display: inline-block
+			text-transform: uppercase
+			color: #752e2e
+			padding: 0 60px
+			font-weight: bold
+			cursor: pointer
+			&.active
+				background-color: #9b1818
+				color: #fff
+
+	.map
+		background-color: #e1d6b0
+		min-height: 480px
+		margin-top: 20px
+
+footer
+	text-align: center
+	h2
+		color: black
+	.tabs
+		text-transform: uppercase
+		color: #9b1818
+		margin-top: 30px
+		.tab.active
+			text-decoration: underline
+	.tab_item
+		font-size: 40px
+		color: #9b1818
+	button
+		margin-top: 30px
+		padding: 10px 30px
+
+#hidden_form
+	margin: auto
+	position: relative
+
+
+.mfp-close-btn-in .mfp-close
+	position: absolute

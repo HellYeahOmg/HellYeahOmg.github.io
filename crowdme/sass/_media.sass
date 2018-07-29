@@ -1,0 +1,77 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.footer-partners
+		display: none
+	.content-section_1 
+		h2
+			&::before
+		left: 440px
+	.logo
+		text-align: center
+		margin-bottom: 20px
+// ≥992px
++media-breakpoint-down(md)
+	.content-section_3
+		background: none
+	.content-section_2
+		span
+			font-size: 20px
+	.content-section_1 h2::before
+		left: 320px
+	.sandwich
+		display: block
+	header
+		padding-bottom: 40px
+		ul
+			padding-top: 60px
+			display: none
+			li
+				display: block
+				text-align: center
+				border-bottom: 1px solid grey
+				margin-bottom: 5px
+				padding: 5px 0px
+				&:last-of-type
+					margin-left: 0
+				
+				a
+					font-size: 15px
+	.content-section_3 .section_3-item.green
+		margin-top: 30px
+// ≥768px
++media-breakpoint-down(sm)
+	.content-section_1 h2::before
+		left: 230px
+	.content-section_5 .section_5-author
+		text-align: left
+	.content-section_5 .section_5-comment p
+		font-size: 16px
+	.content-section_2
+		margin-top: 80px
+	.content-section_2 .section_2-textWrap
+		margin-bottom: 20px
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

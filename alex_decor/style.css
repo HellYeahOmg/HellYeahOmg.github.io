@@ -1,0 +1,533 @@
+/*
+Theme Name: OnePress
+Theme URI: https://www.famethemes.com/themes/onepress/
+Author: FameThemes
+Author URI: http://www.famethemes.com
+Description: OnePress is an outstanding creative and flexible WordPress one page theme well suited for business website, portfolio, digital agency, product showcase, freelancers and everyone else who appreciate good design. The theme overall is an elegant and classic one, a fine example of Bootstrap 4 WordPress theme which compatibility with latest version of WooCommerce. (Live preview : http://www.famethemes.com/preview/?theme=OnePress)
+Version: 1.2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: onepress
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce, blog, portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+OnePress is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*!
+ * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *
+ */
+ 
+ @font-face {
+     font-family: roboto-example;
+     font-weight: 400;
+     font-style: normal;
+     src: url(../fonts/RobotoRegular/RobotoRegular.eot);
+     src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"), url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+ }
+ 
+ @font-face {
+     font-family: roboto-example;
+     font-weight: 700;
+     font-style: normal;
+     src: url(../fonts/RobotoBold/RobotoBold.eot);
+     src: url(../fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"), url(../fonts/RobotoBold/RobotoBold.woff) format("woff"), url(../fonts/RobotoBold/RobotoBold.ttf) format("truetype")
+ }
+ 
+ * {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box
+ }
+ 
+ :after,
+ :before {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box
+ }
+ 
+ ::-webkit-input-placeholder {
+     color: #666;
+     opacity: 1
+ }
+ 
+ :-moz-placeholder {
+     color: #666;
+     opacity: 1
+ }
+ 
+ ::-moz-placeholder {
+     color: #666;
+     opacity: 1
+ }
+ 
+ :-ms-input-placeholder {
+     color: #666;
+     opacity: 1
+ }
+ 
+ body input:focus:required:invalid,
+ body textarea:focus:required:invalid {
+     color: #666
+ }
+ 
+ body input:required:valid,
+ body textarea:required:valid {
+     color: #666
+ }
+ 
+ body,
+ html {
+     height: 100%
+ }
+ 
+ body {
+     font-size: 16px;
+     min-width: 320px;
+     position: relative;
+     line-height: 1.65;
+     font-family: "Open Sans", sans-serif;
+     overflow-x: hidden
+ }
+ 
+ .img-responsive {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ .text-center {
+     text-align: center;
+ }
+ 
+ ::-moz-selection {
+     background-color: orange;
+     color: #fff;
+ }
+ 
+ ::selection {
+     background-color: orange;
+     color: #fff;
+ }
+ 
+ nav {
+     margin-bottom: 10px;
+     padding-top: 13px;
+     width: 100%;
+     background-color: #fff;
+     z-index: 999;
+     padding-bottom: 15px;
+ }
+ 
+ nav li,
+ nav ul {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+ }
+ 
+ nav li li,
+ nav ul li {
+     font-weight: 400;
+     font-size: 14px;
+     display: inline-block;
+     margin-right: 30px
+ }
+ 
+ nav li li:last-child,
+ nav ul li:last-child {
+     margin-right: 0
+ }
+ 
+ nav li li a,
+ nav ul li a {
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #000
+ }
+ 
+ nav ul {
+     padding-top: 22px
+ }
+ 
+ section.credo {
+     min-height: 600px;
+     background-image: url(img/credo-bg.jpg);
+     background-position: top center
+ }
+ 
+ section.credo .credo-h1 {
+     text-align: center
+ }
+ 
+ section.credo .credo-h1 h1 {
+     font-size: 52px;
+     font-weight: 300;
+     color: #fff;
+     line-height: 10;
+     text-shadow: 3px 4px 3px #000
+ }
+ 
+ h2 {
+     font-size: 36px;
+     font-weight: 300;
+     text-transform: uppercase;
+     position: relative;
+     margin-bottom: 50px
+ }
+ 
+ h2::after {
+     content: '';
+     position: absolute;
+     display: block;
+     bottom: -5px;
+     left: 47%;
+     width: 60px;
+     height: 2px;
+     background-color: #000
+ }
+ 
+ section.about {
+     text-align: center;
+     padding-bottom: 70px;
+     padding-top: 45px
+ }
+ 
+ section.about p {
+     font-weight: 300
+ }
+ 
+ section.about b {
+     font-weight: 600
+ }
+ 
+ section.about img {
+     margin-top: 25px
+ }
+ 
+ section.stages {
+     background-image: url(img/stages-bg.jpg);
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-position: top center;
+     text-align: center;
+     color: #fff;
+     font-weight: 300;
+     padding-top: 45px;
+     padding-bottom: 45px
+ }
+ 
+ section.stages h2::after {
+     background-color: #fff
+ }
+ 
+ section.stages .stages-item {
+     margin: 20px 0
+ }
+ 
+ section.stages .stages-item span.caption {
+     font-size: 18px;
+     display: block;
+     font-weight: 400
+ }
+ 
+ section.stages .stages-item p {
+     font-size: 14px;
+     line-height: 16px;
+     font-weight: 300
+ }
+ 
+ section.solutions {
+     text-align: center;
+     padding-top: 45px;
+     margin-bottom: 70px
+ }
+ 
+ section.solutions h2 {
+     margin-bottom: 35px
+ }
+ 
+ section.solutions p {
+     font-size: 16px;
+     color: #000;
+     font-weight: 300;
+     display: inline-block;
+     margin-bottom: 5px
+ }
+ 
+ section.solutions p:last-child {
+     margin-bottom: 40px
+ }
+ 
+ section.solutions .solutions-item {
+     position: relative
+ }
+ 
+ section.solutions .solutions-item img {
+     width: 360px;
+     height: 360px
+ }
+ 
+ section.solutions .solutions-item span {
+     position: absolute;
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: 300;
+     bottom: 25px;
+     color: #fff;
+     left: 45px
+ }
+ 
+ section.solutions .solutions-item span::before {
+     content: '';
+     position: absolute;
+     display: block;
+     width: 30px;
+     height: 2px;
+     background-color: #fff;
+     bottom: 45%;
+     left: -45px;
+ }
+ button#responsive-menu-button {
+     width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 15px;
+    right: 5%;
+    background: #000000;
+ }
+ 
+ section.partners {
+     text-align: center;
+     background-color: #000;
+     color: #fff;
+     padding-top: 45px;
+     height: 260px;
+     
+ }
+ 
+ section.partners h2::after {
+     background-color: #fff
+ }
+
+ nav .hamburger {
+     background-color: black;
+     border-radius: 5px;
+     padding-top: 20px;
+     display: none;
+ }
+
+nav .hamburger-inner,
+nav .hamburger-inner:after, nav .hamburger-inner:before {
+    background-color: #fff;
+
+}
+ 
+ section.partners img {
+     vertical-align: middle;
+     display: inline-block !important;
+     margin-right: 50px;
+     margin-bottom: 30px
+ }
+ 
+ article.big_image {
+     min-height: 600px;
+     background-image: url(img/partners/big_image.jpg);
+     text-align: center;
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     background-size: cover
+ }
+ 
+ article.big_image a.button {
+     margin-top: 250px;
+     display: inline-block;
+     font-size: 18px;
+     font-weight: 700;
+     color: #000;
+     text-decoration: none;
+     border: 4px solid #000;
+     padding: 20px
+ }
+ 
+ footer {
+     background-color: #000;
+     padding-top: 80px;
+     color: #fff;
+     padding-bottom: 40px
+ }
+ 
+ footer .footer-item span {
+     font-size: 16px;
+     font-weight: 300;
+     display: block;
+     position: relative
+ }
+ 
+ footer .footer-item img {
+     position: absolute;
+     top: -33px;
+     left: 40%;
+ }
+ 
+ footer .last img {
+     left: 25%;
+ }
+  footer .first img {
+     left: 28%;
+ }
+
+ div.modal form input, textarea {
+     display: block;
+     width: 100%;
+     margin-bottom: 20px;
+ }
+ 
+ footer button {
+     display: inline-block !important; 
+     font-size: 18px!important; 
+     font-weight: 700!important; 
+     color: #fff!important; 
+     text-decoration: none!important; 
+     border: 1px solid #fff!important; 
+     margin: 0 auto!important; 
+     padding: 10px 25px!important; 
+     margin-top: 30px!important; 
+     background-color: black!important; 
+ }
+
+ footer button:hover {
+     border: 1px solid black !important;
+ }
+ 
+ footer .social {
+     margin: 0 auto;
+     margin-top: 25px
+ }
+ 
+ footer .copy {
+     margin: 0 auto;
+     font-size: 14px;
+     font-weight: 300;
+     margin-top: 30px
+ }
+
+ 
+ @media only screen and (max-width:1200px) {
+     section.solutions .solutions-item span {
+         left: 90px
+     }
+     nav li li, nav ul li {
+         font-size: 11px;
+     }
+ }
+ 
+ @media only screen and (max-width:992px) {
+     nav li li, nav ul {
+         display: none;
+     }
+     nav {
+         padding-bottom: 25px;
+     }
+
+     .logo img{
+         width: 170px;
+     }
+     section.solutions .solutions-item span {
+         left: 210px
+     }
+     nav ul li {
+         display: block;
+         font-size: 18px;
+         margin-bottom: 5px;
+         padding-bottom: 7px;
+         padding-top: 16px;
+         border-bottom: 1px solid #000000;
+     }
+        nav ul li:last-child {
+            border: none;
+        }
+     nav ul li a {
+         color: white;
+     }
+     nav ul {
+         width: 75%;
+         height: 300px;
+         text-align: center;
+         z-index: 999;
+         padding-top: 0;
+         position: fixed;
+         top: 0;
+         left: 0;
+         background-color: #212121;
+     }
+
+       footer .first img {
+     left: 40%;
+    }
+    nav .hamburger {
+        display: inline-block;
+        position: fixed;
+        right: 25px;
+        top: 15px;
+    }
+ 
+ }
+ 
+ @media only screen and (max-width:768px) {
+     footer {
+         text-align: center
+     }
+     footer .footer-item {
+         margin-bottom: 20px
+     }
+     footer .footer-item img {
+         top: 20px;
+         left: 35px
+     }
+     section.solutions .solutions-item span {
+         left: 80px
+     }
+
+     h2::after {
+         left: 43%
+     }
+ }
+ 
+ @media only screen and (max-width:480px) {
+     .carousel img {
+         max-width: 250px
+     }
+     section.credo .credo-h1 h1 {
+         line-height: normal;
+         margin-top: 60px
+     }
+     section.credo {
+         min-height: 300px
+     }
+     section.solutions .solutions-item img {
+         width: 100%;
+         height: auto
+     }
+     section.about img {
+         width: 100%
+     }
+     section.solutions .solutions-item span {
+         left: 47px
+     }
+     footer .footer-item {
+         margin-bottom: 60px
+     }
+     footer .footer-item img {
+         top: -20px;
+         left: 48%
+     }
+ }

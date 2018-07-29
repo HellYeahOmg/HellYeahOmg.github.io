@@ -1,0 +1,123 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+
+@media (max-width: 1350px)
+	section.screenshots
+		.right
+			right: -10%!important
+		.left
+			left: -8%!important
+	.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
+		top: 0
+		.owl-prev
+			position: absolute
+			left: 300px
+			top: 20px
+		.owl-next
+			position: absolute
+			right: 300px
+			top: 15px
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	section.comments .comments-item .comment-author span.name
+		font-size: 17px
+	section.screenshots
+		.right
+			right: 40%!important
+			top: 510px!important
+
+		.left
+			left: 40%!important
+			top: 520px!important
+
+// ≥992px
++media-breakpoint-down(md)
+	.owl-prev
+		position: absolute
+		left: 0px
+	.owl-next
+		position: absolute
+		right: 0px
+	.carousel
+		width: 100%!important
+	section.purposes ul
+		margin-bottom: 50px
+
+	.packages-item
+		margin-left: 20px
+
+// ≥768px
++media-breakpoint-down(sm)
+	nav
+		margin-top: 30px
+	body, html
+		overflow-x: hidden
+	section.packages
+		padding-bottom: 0px
+	section.video
+		display: none
+	.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
+		.owl-prev
+			position: absolute
+			left: 200px
+			top: 30px
+		.owl-next
+			position: absolute
+			right: 200px
+			top: 15px
+	section.footer
+		padding-bottom: 40px
+			
+// ≥576px
++media-breakpoint-down(xs)
+	section.header
+		padding-bottom: 50px
+		nav
+			margin-top: 30px
+		a.button
+			margin-top: 20px
+			display: inline-block
+			margin-left: -20px
+	.container
+		padding-left: 15px
+		padding-right: 15px
+	section.screenshots
+		img.right
+			right: 20%!important
+			top: 260px!important
+
+		img.left
+
+			left: 20%!important
+			top: 270px!important
+	section.packages .packages-item div.price
+		font-size: 30px
+		letter-spacing: 0px
+
+	.owl-carousel .owl-nav  button.owl-prev
+		left: 150px
+	.owl-carousel .owl-nav  button.owl-next
+		right: 150px
+	section.packages .packages-item
+		margin: 0 auto
+		margin-bottom: 30px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

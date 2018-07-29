@@ -1,0 +1,375 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+	
+
+body
+	font-size: 14px
+	min-width: 320px
+	font-weight: 300
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.container
+	padding-left: 7px
+	padding-right: 7px
+
+a.button
+	border-radius: 17px
+	background-color: rgb(255, 255, 255)
+	color: black!important
+	font-weight: 600!important
+	padding: 8.5px 22px
+
+
+
+section.header
+	padding-top: 30px
+	background-position: top center
+	background-image: url(../img/header-bg.jpg)
+	min-height: 800px
+	background-size: cover
+	nav
+		padding-top: 5px
+		ul,li
+			padding: 0
+			margin: 0
+			list-style-type: none
+		li
+			display: inline-block
+			margin-left: 27px
+			&:nth-child(2)
+				margin-left: 46px
+			&:nth-child(3)
+				margin-left: 55px
+			&:last-child
+				margin-left: 38px
+			a
+				color: white
+				font-weight: 400
+
+	.header-content
+		color: white
+		margin-top: 140px
+		h1
+			font-family: 'Dosis'
+			font-weight: bold
+			line-height: 60px
+			font-size: 54px
+			margin-bottom: 21px
+		li
+			font-weight: 400
+			position: relative
+			padding-left: 35px
+			margin-bottom: 11px
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+		.icon
+			position: absolute
+			top: 0
+			left: 0px
+		a.button
+			margin-top: 26px
+			display: inline-block
+			text-align: center
+			width: 190px
+			margin-left: 5px
+			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5)
+
+
+
+section.advantages
+	padding-top: 110px
+	.container
+		border-bottom: 2px solid rgba(192,192,192,.3)
+		padding-bottom: 90px
+
+	h3
+		font-family: "Dosis"
+		font-weight: 700
+		font-size: 24px
+		margin-bottom: 10px
+	p
+		color: #777777
+	.advantages-item
+		padding-left: 100px
+		position: relative
+		margin-bottom: 25px
+		.icon
+			position: absolute
+			top: 15px
+			left: -0px
+			color: #f31f79
+			border: 1px solid rgba(192,192,192,.3)
+			border-radius: 50%
+			width: 75px
+			height: 75px
+			text-align: center
+			font-size: 20px
+			padding-top: 20px
+
+
+
+section.purposes
+	padding-top: 120px
+	h2
+		margin-top: 40px
+		font-family: "Dosis"
+		font-weight: 600
+		font-size: 36px
+	p
+		color: #777777
+		&:nth-child(3)
+			margin-top: 70px
+	ul
+		padding: 0
+		padding-top: 15px
+		margin: 0
+		list-style-type: none
+	li
+		position: relative
+		padding-left: 30px
+		margin-bottom: 10px
+		font-weight: 400
+	.icon
+		position: absolute
+		top: 0
+		left: 0
+	img
+		position: relative
+		margin-bottom: 30px
+		&:nth-of-type(2)
+			position: relative
+			left: -120px
+
+
+
+section.screenshots
+	padding-top: 50px
+	padding-bottom: 100px
+	background-color: #f7fafc
+	text-align: center
+
+	h2
+		margin-top: 40px
+		font-family: "Dosis"
+		font-weight: 600
+		font-size: 36px
+	p
+		color: #777777
+		margin-bottom: 80px
+
+	.left
+		left: -12%!important
+	.right
+		right: -14%!important
+	.carousel
+		ul
+			top: 0!important
+
+section.packages
+	text-align: center
+	padding-top: 90px
+	padding-bottom: 130px
+	h2	
+		margin-top: 40px
+		font-family: "Dosis"
+		font-weight: 600
+		font-size: 36px
+	p
+		color: #777777
+
+	.packages-item
+		max-width: 263px
+		margin-top: 60px
+		padding-bottom: 40px
+		background-color: #f7fafc
+		h3
+			font-family: "Dosis"
+			font-weight: 500
+			font-size: 20px
+			margin-top: 10px
+			display: inline-block
+			color: #333333
+		div.price
+			background-image: url(../img/advantages-price_bg.png)
+			background-repeat: no-repeat
+			background-size: 100%
+			height: 120px
+			letter-spacing: -5px
+			font-size: 48px
+			padding-top: 10px
+			font-weight: 500
+			margin-bottom: 30px
+			span.dollar
+				font-size: 18px
+				position: relative
+				top: -18px
+				left: -2px
+				letter-spacing: -3px
+			span
+				font-size: 18px
+				letter-spacing: -3px
+		ul
+			padding: 0
+			margin: 0
+			padding: 0px 40px
+			list-style-type: none
+			color: #777777
+		li
+			border-bottom: 1px #eeeeee dashed
+			margin-bottom: 10px
+		p
+			margin-top: 40px
+			color: #aaaaaa
+		a.button
+			  padding: 8.5px 40px
+			  border: 1px solid #eeeeee
+		&:hover
+			box-shadow: 0px 10px 30px rgba(0,0,0,.1)
+			background-color: white
+			div.price
+				background-image: url(../img/advantages-price_hover.png)
+				color: white
+			a.button
+				background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%)
+				background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%)
+				background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%)
+				color: white
+				border: 3px solid #d5d5d5
+
+
+
+
+section.comments
+	text-align: center
+	padding-top: 70px
+	padding-bottom: 90px
+	h2	
+		margin-top: 40px
+		font-family: "Dosis"
+		font-weight: 600
+		font-size: 36px
+	p
+		color: #777777
+		margin-bottom: 80px
+	.comments-item
+		text-align: left
+		background-color: #f7fafc
+		padding: 40px
+		p
+			margin-bottom: 30px
+		img
+			border-radius: 50%
+			display: inline-block
+			width: 80px
+			height: 80px
+		.comment-author
+			p
+				display: inline-block
+				position: relative
+				top: 15px
+				left: 10px
+				margin-bottom: 0
+			span.name
+				margin-top: 10px
+				font-weight: 400
+				font-size: 18px
+				color: #222222
+		&:hover
+			background-color: white
+			box-shadow: 0px 10px 30px rgba(0,0,0,.1)
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
+	display: block
+	position: relative
+	top: -170px
+	.owl-prev
+		position: absolute
+		left: -75px
+	.owl-next
+		position: absolute
+		right: -100px
+			
+
+section.download
+	padding-top: 100px
+	padding-bottom: 120px 
+	text-align: center
+	background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%)
+	background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%)
+	background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%)
+
+	h2	
+		font-family: "Dosis"
+		font-weight: 600
+		color: white
+		font-size: 36px
+		margin-bottom: 70px
+	.download-item
+		text-align: left
+		margin-bottom: 30px
+		background-color: white
+		p
+			position: relative
+			top: 20px
+			left: 15px
+			display: inline-block
+			span
+				font-family: 'Dosis'
+				font-size: 30px
+				font-weight: 700
+
+
+
+section.footer
+	text-align: center
+	padding-top: 60px
+	padding-bottom: 45px
+	background-color: #222222
+	color: white
+
+	.facebook, .twitter, .dribbble, .behance
+		display: inline-block
+		margin-right: 25px
+		font-size: 18px
+		a
+			color: white
+	.dribbble
+		a
+			color: #f31f79
+	p
+		margin-top: 20px
+
+@import "media" // Always at the end

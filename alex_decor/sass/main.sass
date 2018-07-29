@@ -1,0 +1,258 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+nav
+	margin-bottom: 10px
+	padding-top: 13px
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			font-weight: 400
+			font-size: 14px
+			display: inline-block
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			a
+				text-decoration: none
+				text-transform: uppercase
+				color: black
+	ul
+		padding-top: 22px
+
+
+section.credo
+	min-height: 600px
+	background-image: url(img/credo-bg.jpg)
+	background-position: top center
+	.credo-h1
+		text-align: center
+		h1
+			font-size: 52px
+			font-weight: 300
+			color: #ffffff
+			line-height: 10
+			text-shadow: 3px 4px 3px black
+
+
+h2
+	font-size: 36px
+	font-weight: 300
+	text-transform: uppercase
+	position: relative
+	margin-bottom: 50px
+	&::after
+		content: ''
+		position: absolute
+		display: block
+		bottom: -5px
+		left: 47%
+		width: 60px
+		height: 2px
+		background-color: black
+		
+section.about
+	text-align: center
+	padding-bottom: 70px
+	padding-top: 45px
+	p
+		font-weight: 300
+	b
+		font-weight: 600
+	img
+		margin-top: 25px
+
+
+section.stages
+	background-image: url(img/stages-bg.jpg)
+	background-size: cover
+	background-position: top center
+	text-align: center
+	color: white
+	font-weight: 300
+	padding-top: 45px
+	padding-bottom: 45px
+	h2
+		&::after
+			background-color: white
+	.stages-item
+		margin: 20px 0px
+		span.caption
+			font-size: 18px
+			display: block
+			font-weight: 400
+		p
+			font-size: 14px
+			line-height: 16px
+			font-weight: 300
+
+
+section.solutions
+	text-align: center
+	padding-top: 45px
+	margin-bottom: 70px
+	h2
+		margin-bottom: 35px
+	p
+		font-size: 16px
+		color: #000000
+		font-weight: 300
+		display: inline-block
+		margin-bottom: 5px
+		&:last-child
+			margin-bottom: 40px
+	.solutions-item
+		position: relative
+		img
+			width: 360px
+			height: 360px
+		span
+			position: absolute
+			text-transform: uppercase
+			font-size: 20px
+			font-weight: 300
+			bottom: 25px
+			color: white
+			left: 45px
+			&::before
+				content: ''
+				position: absolute
+				display: block
+				width: 30px
+				height: 2px
+				background-color: #fff
+				bottom: 45%
+				left: -45px
+		
+section.partners
+	text-align: center
+	background-color: black
+	color: #ffffff
+	padding-bottom: 60px
+	h2
+		&::after
+			background-color: #fff
+	img
+		vertical-align: middle
+		display: inline-block
+		margin-right: 50px
+		margin-bottom: 30px
+
+
+article.big_image
+	min-height: 600px
+	background-image: url(img/partners/big_image.jpg)
+	text-align: center
+	background-repeat: no-repeat
+	background-size: cover
+	a.button
+		margin-top: 250px
+		display: inline-block
+		font-size: 18px
+		font-weight: 700
+		color: black
+		text-decoration: none
+		border: 4px solid black
+		padding: 20px
+
+
+
+
+footer
+	background-color: black
+	padding-top: 80px
+	color: white
+	padding-bottom: 40px
+
+	.footer-item
+		span
+			font-size: 16px
+			font-weight: 300
+			display: block
+			position: relative
+		img
+			position: absolute
+			top: -33px
+			left: 40%
+	.last
+		img
+			left: 25%
+	a.button
+		display: inline-block
+		font-size: 18px
+		font-weight: 700
+		color: white
+		text-decoration: none
+		border: 2px solid white
+		margin: 0 auto
+		padding: 10px 25px
+		margin-top: 30px
+	.social
+		margin: 0 auto
+		margin-top: 25px
+
+	.copy
+		margin: 0 auto
+		font-size: 14px
+		font-weight: 300
+		margin-top: 30px
+@import "media" // Всегда в конце

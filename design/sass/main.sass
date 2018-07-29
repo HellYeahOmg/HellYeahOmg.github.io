@@ -1,0 +1,161 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	position: relative
+	font-size: 16px
+	background-color: white
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	color: #212b32
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	&::after
+		content: ''
+		position: absolute
+		bottom: 54px
+		left: 0
+		display: block
+		background-image: url(../img/-e-vaza_02.jpg)
+		width: 130px
+		height: 609px
+	&::before
+		content: ''
+		position: absolute
+		bottom: 54px
+		right: 0
+		display: block
+		background-image: url(../img/-e-vaza_01.png)
+		width: 242px
+		height: 822px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.no-padding
+	padding: 0!important
+a.button
+	font-weight: 600
+	color: #212b32
+	text-decoration: none
+	background-color: #ffcd00
+	display: inline-block
+	padding: 15px 38px 13px 28px
+	border-bottom: 5px solid #fcb625
+	position: relative
+	font-size: 18px
+	left: 203px
+	top: 70px
+	&::before
+		content: ''
+		display: block
+		background-image: url(../img/-e-divan.png)
+		position: absolute
+		top: -254px	
+		width: 589px
+		height: 260px
+		left: -216px
+
+header
+	img
+		position: absolute
+		top: 143px
+		right: -175px
+	position: relative
+	&::after
+		content: ''
+		display: block
+		width: 152px
+		height: 183px
+		position: absolute
+		top: 95px
+		left: 640px
+		background-image: url(../img/-e-kartina.jpg)
+	&::before
+		content: ''
+		display: block
+		background-image: url(../img/-e-lampa.jpg)
+		position: absolute
+		top: 142px
+		left: -248px
+		width: 188px
+		height: 303px
+
+	padding-top: 79px
+	h1
+		position: relative
+		font-size: 33px
+		padding-left: 41px
+		font-weight: 400
+		line-height: 40px
+		margin-bottom: 19px
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			width: 16px
+			left: -9px
+			top: 13px
+			height: 35px
+			background-color: #ffcd00
+	p
+		font-size: 18px
+		line-height: 26px
+		position: relative
+		left: -10px
+		font-weight: 300
+		font-family: 'Roboto', sans-serif
+	.row
+		&:first-of-type
+			.col-md-6
+				padding: 0!important
+
+.content
+	padding-top: 39px
+
+	h3
+		font-size: 22px
+		line-height: 24px
+		font-weight: 400
+	p
+		font-weight: 100
+		padding-top: 10px
+		line-height: 1.55
+		color: #999999
+		font-family: 'Roboto', sans-serif
+	.content-item
+		position: relative
+		margin-bottom: 70px
+		padding-left: 90px
+		img
+			position: absolute
+			left: 8px
+			top: 4px
+
+@import "media" // Always at the end
