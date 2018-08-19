@@ -58,4 +58,286 @@ body
 	background-color: $accent
 	color: #fff
 
+section, header
+	max-width: 1366px
+	margin: 0 auto
+
+
+
+.header__top-line
+	max-height: 40px
+	padding: 0px 60px
+	align-items: center
+	display: flex
+	background-color: #cb1717
+	color: #fe9389
+	
+
+.header__menu
+	display: flex
+	padding: 0
+	ul, li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		margin-right: 35px
+		&:last-child
+			margin-right: 0
+		a
+			color: #fe9389
+			text-decoration: none
+
+
+.location
+	display: flex
+	width: 165px
+	margin-right: 55px
+	align-items: center
+	cursor: pointer
+	img
+		margin-right: 5px
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li
+		display: none
+		&:first-child
+			display: block
+.telephone
+	margin-left: auto
+.header__bottom-line
+	display: flex
+	background-color: #ec2d2d
+	align-items: center
+	padding: 20px 60px
+
+.logo
+	max-width: 165px
+	margin-right: 55px
+
+.header__submenu
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li
+		margin-right: 50px
+		&:last-child
+			margin-right: 0
+		a
+			color: white
+			font-size: 20px
+			text-decoration: none
+	ul
+		display: flex
+.search
+	margin-left: auto
+.log-in
+	cursor: pointer
+	a.button
+		padding: 12px 19px
+		font-weight: 600
+		text-decoration: none
+		&:hover
+			text-decoration: none
+a.button
+	background-color: #fff
+	color: red
+	border-radius: 30px
+
+.header__search
+	margin-right: 33px
+
+.discounts
+	background-color: #ecdfd3
+	padding: 60px
+	
+
+	
+.discounts__item
+	position: relative
+	display: flex
+	height: 380px
+	img
+		max-height: 400px	
+	
+.carousel-inner
+	overflow: visible !important
+
+.discounts__img
+	width: 522px
+
+.discounts__info
+	width: 560px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+
+.discounts__name
+	font-size: 50px
+	line-height: 50px
+	font-weight: bold
+
+
+.discounts__price
+	position: absolute
+	width: 200px
+	height: 200px
+	border-radius: 50%
+	background-image: url(../img/discounts__price-bg.png)
+	right: 60px
+	bottom: -120px
+	z-index: 10
+
+
+.carousel-indicators
+	bottom: -120px !important
+
+.carousel-indicators li
+	border-radius: 50% !important
+	height: 15px !important
+	width: 15px !important
+	border: 1px solid grey !important
+.carousel-indicators .active
+	background-color: red !important
+
+
+.discounts_new-price
+	color: white
+	font-size: 54px
+	position: absolute
+	top: 30px
+	left: 30px
+	sup
+		font-size: 30px
+
+
+.discounts_old-price
+	color: #0e7b2f
+	font-size: 27px
+	position: absolute
+	left: 35px
+	top: 100px
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		background-color: #fff
+		width: 70px
+		height: 3px
+		top: 18px
+		left: 5px
+		transform: rotate(-20deg)
+	
+.discounts__amount
+	color: white
+	font-size: 27px
+	bottom: 20px
+	right: 45px
+	position: absolute
+
+
+.social
+	display: flex
+
+
+.social
+	margin-top: 20px
+	a
+		width: 42px
+		height: 42px
+		margin-right: 25px
+.social-vk
+	background-image: url(../img/vk.png)
+
+.social-ok
+	background-image: url(../img/ok.png)
+
+
+.social-mail-ru
+	background-image: url(../img/mail-ru.png)
+
+.recipes
+	margin-top: 40px
+	padding-bottom: 60px
+	background: linear-gradient(to bottom, #fff, #f7fafc)
+	h2
+		font-weight: 500
+		font-size: 28px
+		margin-bottom: 33px
+
+
+.recipes__grid
+	display: flex
+
+.recipes__item
+	margin-right: 52px
+	max-width: 380px
+	h3
+		font-weight: 600
+		font-size: 20px
+		margin-top: 15px
+		max-width: 275px
+
+	&:hover
+		.recipes__button
+			background-color: red
+			color: white				
+			border-bottom-left-radius: 10px
+			border-bottom-right-radius: 10px
+
+	&:last-child
+		margin-right: 0
+
+.recipes__photo
+	border-top-left-radius: 10px
+	border-top-right-radius: 10px
+
+
+.recipes_info
+	padding-top: 20px
+	border: 2px solid #eef1f1
+	border-bottom-left-radius: 10px
+	border-bottom-right-radius: 10px
+	img
+		margin-left: 20px
+
+
+	h3
+		margin-left: 20px
+
+.recipes__button
+	display: block
+
+.recipes__type
+	font-size: 14px
+	font-weight: 500
+	color: #c9c9c9
+
+
+.recipes__time
+	color: #c9c9c9
+
+
+.recipes__button
+	font-size: 18px
+	color: red
+	font-weight: 600
+	text-align: center
+	padding: 10px 0px
+	margin-top: 38px
+	width: 100%
+	&:hover
+		text-decoration: none
+
+
+
+
+
+
+
 @import "media" // Всегда в конце
+

@@ -30,24 +30,192 @@
 
 <body>
 
-	<div class="container">
+	<header class="header">
+		<div class="header__top-line">
+			<div class="location">
+				<img src="img/geo.png" alt="">
+				<ul>
+					<li>Омск</li>
+					<li>Спб</li>
+					<li>Москва</li>
+					<li>Новгород</li>
+					<li>Всеволожск</li>
+				</ul>
+			</div>
+			<ul class="header__menu">
+				<li>
+					<a href="#">О компании</a>
+				</li>
+				<li>
+					<a href="#">Акции</a>
+				</li>
+				<li>
+					<a href="#">Магазины</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="#">Товары</a>
+				</li>
+				<li>
+					<a href="#">Напишите нам</a>
+				</li>
+			</ul>
+			<div class="telephone">
+				<span>
+					8-800-555-55-05
+				</span>
+			</div>
+		</div>
+		<div class="header__bottom-line">
+			<div class="logo">
+				<a href="/">
+					<img src="img/logo.png" alt="Пятерочка">
+				</a>
+			</div>
+			<div class="header__submenu">
+				<ul>
+					<li>
+						<a href="#">Покупателям</a>
+					</li>
+					<li>
+						<a href="#">Партнерам</a>
+					</li>
+					<li>
+						<a href="#">Карьера</a>
+					</li>
+				</ul>
+			</div>
+			<div class="search header__search">
+				<img src="img/search.png" alt="">
+			</div>
+			<div class="log-in">
+				<a href="#" class="button">Войти</a>
+			</div>
 
-		<div class="row">
+		</div>
+	</header>
 
-			<div class="col-sm-8 col-sm-offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова, силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни это, первую переулка правилами?</p>
-				<p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты? Предупреждал повстречался, но которое!</p>
-				<p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая предложения рот скатился.</p>
+	<section class="discounts">
+
+		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<div class="discounts__item">
+						<div class="discounts__info">
+							<div class="discounts__date">c 30 июня по 6 июля 2015 года</div>
+							<div class="discounts__name">Окорочка куриные охлажденные</div>
+							<div class="discounts__weight">1 кг</div>
+						</div>
+						<div class="discounts__img">
+							<img src="img/discount__item1.png" alt="">
+						</div>
+						<div class="discounts__price">
+							<span class="discounts_new-price">129
+								<sup>00</sup>
+							</span>
+							<span class="discounts_old-price">189
+								<sup>50</sup>
+							</span>
+							<span class="discounts__amount">20%</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="discounts__item">
+
+						<div class="discounts__info">
+							<div class="discounts__date">Только здесь только сейчас</div>
+							<div class="discounts__name">Яйки в корзинке</div>
+							<div class="discounts__weight">Стальные</div>
+						</div>
+
+						<div class="discounts__img">
+							<img src="img/discount__item2.png" alt="">
+						</div>
+
+						<div class="discounts__price">
+							<span class="discounts_new-price">998
+								<sup>99</sup>
+							</span>
+							<span class="discounts_old-price">999
+								<sup>50</sup>
+							</span>
+							<span class="discounts__amount">0.1%</span>
+						</div>
+
+					</div>
+				</div>
 
 			</div>
-			
+
 		</div>
 
-	</div>
+
+
+
+
+
+	</section>
+
+	<section class="social">
+		<a href="#" class="social-vk"></a>
+		<a href="#" class="social-ok"></a>
+		<a href="#" class="social-mail-ru"></a>
+	</section>
+
+	<section class="recipes">
+		<h2>Наши рецепты</h2>
+		<div class="recipes__grid">
+			<div class="recipes__item">
+				<img src="img/recipes__item-1.jpg" alt="" class="img-responsive recipes__photo">
+				<div class="recipes_info">
+					<img src="img/recipes__leaf.png" alt="">
+					<span class="recipes__type">вегетарианский, простой</span>
+					<h3>Блинчики с клубникой</h3>
+					<img src="img/recipes__clock.png" alt="">
+					<span class="recipes__time">
+						0:40</span>
+					<a href="#" class="recipes__button">Подобрать продукты</a>
+				</div>
+			</div>
+			<div class="recipes__item">
+				<img src="img/recipes__item-1.jpg" alt="" class="img-responsive recipes__photo">
+				<div class="recipes_info">
+					<img src="img/recipes__leaf.png" alt="">
+					<span class="recipes__type">сытный, сложный</span>
+					<h3>Говяжий стейк с песто и кукурузой</h3>
+					<img src="img/recipes__clock.png" alt="">
+					<span class="recipes__time">
+						0:40</span>
+					<a href="#" class="recipes__button">Подобрать продукты</a>
+				</div>
+			</div>
+			<div class="recipes__item">
+				<img src="img/recipes__item-1.jpg" alt="" class="img-responsive recipes__photo">
+				<div class="recipes_info">
+					<img src="img/recipes__leaf.png" alt="">
+					<span class="recipes__type">завтрак, простой</span>
+					<h3>Вафли с медом</h3>
+					<img src="img/recipes__clock.png" alt="">
+					<span class="recipes__time">
+						0:40</span>
+					<a href="#" class="recipes__button">Подобрать продукты</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 	<script src="js/scripts.min.js"></script>
 
 </body>
+
 </html>
