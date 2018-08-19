@@ -65,7 +65,7 @@ section, header
 
 
 .header__top-line
-	max-height: 40px
+	height: 40px
 	padding: 0px 60px
 	align-items: center
 	display: flex
@@ -76,6 +76,7 @@ section, header
 .header__menu
 	display: flex
 	padding: 0
+	margin: 0
 	ul, li
 		list-style-type: none
 		padding: 0
@@ -129,6 +130,7 @@ section, header
 		a
 			color: white
 			font-size: 20px
+			font-weight: 600
 			text-decoration: none
 	ul
 		display: flex
@@ -242,6 +244,7 @@ a.button
 
 .social
 	display: flex
+	padding: 0px 60px
 
 
 .social
@@ -262,6 +265,7 @@ a.button
 
 .recipes
 	margin-top: 40px
+	padding: 0px 60px
 	padding-bottom: 60px
 	background: linear-gradient(to bottom, #fff, #f7fafc)
 	h2
@@ -269,75 +273,160 @@ a.button
 		font-size: 28px
 		margin-bottom: 33px
 
+.recipes-top
+	display: flex
+	justify-content: space-between
+	span
+		color: red
+		font-weight: 500
 
 .recipes__grid
 	display: flex
 
+.recipes__info
+	padding-top: 20px
+
 .recipes__item
-	margin-right: 52px
+	display: flex
+	flex-direction: column
 	max-width: 380px
+	border-top-left-radius: 10px
+	border-top-right-radius: 10px
+	border-bottom-left-radius: 10px
+	border-bottom-right-radius: 10px
+	margin-right: 52px
+	border: 1px solid #e4e6e8
+	justify-content: space-between
 	h3
 		font-weight: 600
-		font-size: 20px
 		margin-top: 15px
-		max-width: 275px
-
+		font-size: 24px
+	.recipes__time, .recipes__type, h3
+		margin-left: 22px
 	&:hover
 		.recipes__button
+			color: white
 			background-color: red
-			color: white				
 			border-bottom-left-radius: 10px
-			border-bottom-right-radius: 10px
-
-	&:last-child
-		margin-right: 0
-
+			border-bottom-right-radius: 10px	
 .recipes__photo
 	border-top-left-radius: 10px
 	border-top-right-radius: 10px
+	margin-bottom: 20px
 
+	&:last-child
+		margin-right: 0
+.recipes__item-top
+	position: relative
+.recipes__price
+	color: white
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: #46b650
+	right: 20px
+	bottom: 0
+	border-radius: 50%
+	width: 80px
+	height: 80px
+	position: absolute
+	font-weight: 600
+	font-size: 24px
+	sup
+		font-size: 16px
 
-.recipes_info
-	padding-top: 20px
-	border: 2px solid #eef1f1
-	border-bottom-left-radius: 10px
-	border-bottom-right-radius: 10px
-	img
-		margin-left: 20px
-
-
-	h3
-		margin-left: 20px
 
 .recipes__button
-	display: block
+	width: 100%
+	text-align: center
 
 .recipes__type
-	font-size: 14px
-	font-weight: 500
-	color: #c9c9c9
-
+	color: #bbbbbb
+	font-size: 16px
 
 .recipes__time
-	color: #c9c9c9
-
+	font-size: 18px
+	color: #bbbbbb
 
 .recipes__button
-	font-size: 18px
+	padding: 20px 40px
 	color: red
+	border-top: 1px solid #f4f5f5
+	font-size: 18px
 	font-weight: 600
-	text-align: center
-	padding: 10px 0px
-	margin-top: 38px
-	width: 100%
-	&:hover
-		text-decoration: none
+	margin-top: 20px
+	cursor: pointer
+
+
+.partners
+	display: flex
+	padding: 100px 60px
+	max-width: 1366px
+	img
+		margin-right: 95px
+		&:last-child
+			margin-right: 0
+
+.stores
+	height: 300px
+	background-image: url(../img/5100.png)
 
 
 
+.cta
+	display: flex
+	color: white
+	background-color: #ec2e2e
+	padding: 65px 60px
+	min-width: 1366px
+
+.cta-info
+	h3
+		font-weight: bold
+		font-size: 50px
+	p
+		font-weight: 500
+		font-size: 18px
+
+.cta-button
+	color: red
+	background-color: white
+	padding: 25px 40px
+	border-radius: 30px
+	margin-top: 40px
+	display: inline-block
+	font-size: 18px
+	font-weight: 600
+	cursor: pointer
 
 
+.cta-card
+	margin-left: auto
+	margin-right: 125px
 
 
+.footer
+	background-color: #434d54
+	max-width: 1366px
+	padding: 80px 60px
+	margin: 0 auto
+	justify-content: space-between
+	display: flex
+	h3
+		font-size: 18px
+		color: #9da1a4
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li
+		font-size: 14px
+		a
+			color: #f3f3f3
+
+
+.footer__about
+	font-size: 16px
+	color: #9da1a4
 @import "media" // Всегда в конце
 
