@@ -1,0 +1,308 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+@font-face
+    font-family: "pfdintextpro-light"
+    src : url("../fonts/pfdintextpro-light.ttf")
+
+.container
+	max-width: 1200px
+
+.header
+	min-height: 700px
+	height: 100vh
+	background-image: url('../img/header__bg.jpg')
+	background-size: cover
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.header__title
+	font-weight: normal
+	margin: 0
+	margin-bottom: 85px
+
+.header__items
+	display: flex
+	justify-content: space-around
+	a
+		&:hover
+			text-decoration: none
+
+.header__title
+	text-align: center
+
+.header__item
+	border-radius: 50%
+	background-color: rgba(255,255,255,.5)
+	width: 360px
+	height: 360px
+	padding: 8px
+	
+
+.header__item__content
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	border-radius: 50%
+	justify-content: center
+	&:hover
+		border: 2px solid $accent
+
+.header__item__img
+	margin-bottom: 40px
+
+.header__item__text
+	font-size: 28px
+	text-decoration: none
+	color: black
+
+.tabs
+	display: flex
+	margin-bottom: 80px
+	justify-content: space-around
+
+.cta
+	min-height: 100vh
+	background-image: url('../img/cta__bg.png')
+	background-size: cover
+
+.tablinks
+	padding: 45px 0
+	flex: 1
+	text-align: center
+	cursor: pointer
+	font-size: 28px
+	border-bottom: 1px solid #c5c5c2
+
+.tablinks.active
+	border-bottom: 3px solid $accent
+
+.tabcontent
+	width: 60%
+	display: none
+.tabcontent.active
+	display: block
+
+.cta__subtitle
+	margin: 0
+	margin-top: 20px
+	margin-bottom: 35px
+
+.cta__list
+	counter-reset: my-awesome-counter
+
+.cta__li
+	margin-bottom: 20px
+	list-style-type: none
+	counter-increment: my-awesome-counter
+	position: relative
+	&:last-child
+		margin-bottom: 0
+	&:before
+		content: counter(my-awesome-counter)
+		color: $accent
+		font-size: 28px
+		margin-right: 10px
+		display: inline-block
+		height: 40px
+		position: absolute
+		top: -5px
+		left: -30px
+
+
+.cta__button
+	color: white
+	background-color: $accent
+	border: none
+	border-radius: 5px
+	padding: 10px 15px
+	margin-top: 40px
+	cursor: pointer
+
+.header__mobile-icon
+	display: none
+
+
+//accordion 
+$white: rgba(254,255,250,1)
+$grey: rgba(220,231,235,1)
+$black: rgba(48,69,92,0.8)
+  
+.transition
+  transition: all 0.25s ease-in-out
+
+.flipIn
+  animation: flipdown 0.5s ease both
+    
+.no-select
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.accordion__title
+	text-align: center
+	margin-bottom: 20px
+
+.accordion__subtitle
+  font-size: 19px
+  line-height: 34px
+  font-weight: 300
+  display: block
+  background-color: #fafaf0
+  margin: 0
+  cursor: pointer
+  @extend .no-select
+
+.accordion__content
+  font-size: 17px
+  line-height: 26px
+  position: relative
+  overflow: hidden
+  @extend .transition
+  opacity: 1
+  transform: translate( 0 , 0 )  
+  margin-top: 14px
+  z-index: 2
+  
+ul
+  list-style: none
+  perspective: 900
+  padding: 0
+  margin: 0
+  
+  li
+    position: relative
+    padding: 0
+    margin: 0 0 10px 0
+    @extend .flipIn
+      
+    &:nth-of-type(1)
+      animation-delay: 0.5s
+    
+    &:nth-of-type(2)
+      animation-delay: 0.75s
+        
+    &:nth-of-type(3)
+      animation-delay: 1.0s
+    
+    &:last-of-type
+      padding-bottom: 0
+      
+    i
+      position: absolute
+      transform: translate( -6px , 0 )
+      margin-top: 30px
+      right: 35px
+      
+      &:before , &:after
+        content: ""
+        @extend .transition
+        position: absolute
+        background-color: #8c8d8e
+        width: 3px
+        height: 9px
+        
+      &:before
+        transform: translate( -2px , 0 ) rotate( 45deg )
+          
+      &:after
+        transform: translate( 2px , 0 ) rotate( -45deg )
+    
+    input[type=checkbox]
+      position: absolute
+      cursor: pointer
+      width: 95%
+      height: 100%
+      z-index: 1
+      opacity: 0
+      
+      &:checked
+        &~.accordion__content
+          margin-top: 0
+          max-height: 0
+          opacity: 0
+          transform: translate( 0 , 50% )
+            
+        &~i
+          &:before
+            transform: translate( 2px , 0 ) rotate( 45deg )
+          
+          &:after
+            transform: translate( -2px , 0 ) rotate( -45deg )
+
+@keyframes flipdown
+  0%
+    opacity: 0
+    transform-origin: top center
+    transform: rotateX(-90deg)
+  5%
+    opacity: 1
+  80%
+    transform: rotateX(8deg)
+  83%
+    transform: rotateX(6deg)
+  92%
+    transform: rotateX(-3deg)
+  100%
+    transform-origin: top center
+    transform: rotateX(0deg) 
+
+.cta--mobile
+	background-color: #f3f2da
+	display: none
+	padding-top: 30px
+
+.accordion__subtitle
+	padding: 20px 15px
+
+.accordion__subtitle__icon
+	width: 35px
+	margin-right: 20px
+
+
+@import "media" // Always at the end
