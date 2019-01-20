@@ -1,0 +1,85 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@media (max-width: 1200px)
+  .header__menu
+    display: none
+  .header
+    background-image: none
+  .container--header
+    padding-top: 15px
+    padding-bottom: 5px
+  .login--header
+    display: none
+  .hamburger
+    display: inline-block
+  .header__logo
+    margin-left: auto
+  .header__main
+    margin: 0 auto
+  .container
+    padding-left: 15px
+    padding-right: 15px
+// ≥992px
+@media (max-width: 992px)
+  .social__item
+    flex-basis: 50%
+  .footer__phones
+    display: none
+    
+// ≥768px
+@media (max-width: 768px)
+  .section__li a
+    font-size: 18px
+  .setup__buttons
+    display: flex
+    flex-direction: column
+  .setup__btn-cta
+    margin-right: 0
+    margin-bottom: 20px
+  .section__li
+    margin-bottom: 20px
+  .section__li::before
+    top: 10px
+    left: -20px
+  .section__list
+    margin-top: 30px
+  .section__title
+    font-size: 20px
+  .after-setup__bold
+    font-size: 18px
+  .after-setup__text
+    font-size: 16px
+  .after-setup .section__list
+    padding-left: 0
+  .after-setup__opportunities
+    margin-bottom: 20px
+  .social__item
+    flex-basis: 100%
+  .login__enter
+    margin-right: 20px
+
+    
+// ≥576px
+@media (max-width: 576px)
+  .after-setup__opportunities
+    margin-right: 0
+  .after-setup__icon
+    margin-right: 20px
+  .section__btn
+    width: 100%
+  .simple-setup--first
+    left: 0
+  .simple-setup--second
+    left: 0
+  .footer__contacts
+    display: none
+  .footer__logo
+    display: none
+  .footer__text
+    color: #fff
+
+
